@@ -4,14 +4,22 @@
     <title>Membuat Login</title>
 </head>
 <body>
+<?php
+    session_start();
+    if($_SESSION['status']!="login"){
+        header("localhost:../index.php?pesan=belum_login");
+    }
+    ?>
+
+    <h4> Selamat Datang,<?php echo $_SESSION['username'];?>! Anda telah berhasil mendaftar.</h4>
     <center>
     <h2>LOGIN<h2>
         <br/>
         <br/>
         <?php
-        if (isset($_GET['pesan'])){
+        if (isset($_GET['pesan'])){fd3wr
             if($_GET['pesan'] == "gagal"){
-                echo "Login gagal! username dan password salah!";
+                echo "Login gagal! usern`1`++++ame dan password salah!";
             }else if($_GET['pesan'] == "logout") {
                 echo"Anda telah berhasil logout";
             }else if($_GET['pesan'] == "belum_login"){

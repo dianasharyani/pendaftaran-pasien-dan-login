@@ -21,7 +21,7 @@
         ?>
         <br/>
         <br/>
-        <form method="POST" action="cek_login.php">
+        <form method="POST" action="login.php">
             <table>
                 <tr>
                     <td>Username</td>
@@ -33,14 +33,9 @@
                     <td>:</td>
                     <td><input type="password" name="password" placeholder="Masukan Password"></td>
                 </tr>
-                <tr>
                     <td></td>
                     <td></td>
-                    <td><input type="submit" value="LOGIN"></td>
-                </tr>
-                    <td></td>
-                    <td></td>
-                <td><a href="daftar.php"><input type="button" name="daftar" value="DAFTAR"/></a></td>
+                <td><a href="daftar.php"><input type="submit" name="daftar" value="DAFTAR"/></a></td>
     <table>
     </form>
 </body>
