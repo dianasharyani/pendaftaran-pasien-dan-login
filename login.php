@@ -17,9 +17,9 @@
         <br/>
         <br/>
         <?php
-        if (isset($_GET['pesan'])){fd3wr
+        if (isset($_GET['pesan'])){
             if($_GET['pesan'] == "gagal"){
-                echo "Login gagal! usern`1`++++ame dan password salah!";
+                echo "Login gagal! username dan password salah!";
             }else if($_GET['pesan'] == "logout") {
                 echo"Anda telah berhasil logout";
             }else if($_GET['pesan'] == "belum_login"){
